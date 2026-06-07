@@ -6,6 +6,8 @@ const app = new Hono();
 
 const mongourl = "mongodb://localhost:27017/mongo_for_redis";
 
+const redis = new Redis("redis://localhost:6379");
+
 
 app.get('/redis', async (c) => {
     const reply = await redis.ping();
@@ -28,6 +30,5 @@ app.get('/mongo', async (c) => {
     })
 })
 
-const redis = new Redis("redis://localhost:6379");
 
 export default app;
