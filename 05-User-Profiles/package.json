@@ -1,0 +1,16 @@
+{
+  "name": "05-user-profiles",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.12.24",
+    "ioredis": "^5.11.1"
+  }
+}
